@@ -1,0 +1,23 @@
+<p-table [value]="aviones">
+  <ng-template pTemplate="caption">
+    Marca de Aviones
+  </ng-template>
+  <ng-template pTemplate="header">
+    <tr>
+      <th>Id</th>
+      <th>Codigo</th>
+      <th>Tipo</th>
+      <th>Ciudad Base</th>
+      <th>Marca</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-avion>
+    <tr>
+      <td>{{avion.id}}</td>
+      <td>{{avion.codigo_avion}}</td>
+      <td>{{avion.tipo_avion}}</td>
+      <td>{{avion.ciudad_base}}</td>
+      <td>{{avion.marca}}</td>
+    </tr>
+  </ng-template>
+</p-table>

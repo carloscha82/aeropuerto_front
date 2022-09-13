@@ -1,0 +1,90 @@
+<!-- Reto 1 -->
+<!--
+<input type="number" #num1>
+<input type="number" #num2>
+<button (click)="sumar(num1.value, num2.value)">Sumar</button>
+<button (click)="restar(num1.value, num2.value)">Restar</button>
+<button (click)="multiplicar(num1.value, num2.value)">Multiplicar</button>
+<button (click)="dividir(num1.value, num2.value)">Dividir</button>
+<br>
+<button (click)="operacion=''; num1.value=''; num2.value='';">Limpiar</button>
+<h1 class="titulo-pagina" *ngIf="operacion"> El resultado de la {{operacion}} es : {{resultado}}</h1>
+-->
+
+<!-- Reto 2 -->
+<!--<ul>
+  <li class="titulo-pagina" *ngFor="let nombre of nombres">
+    {{nombre}} <button (click)="borrarNombre(nombre)">Borrar</button>
+  </li>
+
+</ul>
+
+<input type="text" #nombre>
+<button (click)="adicionarNombre(nombre.value)">Agregar</button>
+<br>-->
+
+<!-- Reto 3 -->
+<!--<ul>
+  <li class="titulo-pagina" *ngFor="let persona of lista">
+    Nombre : {{persona.nombre}}
+     -
+    Edad : {{persona.edad}}
+    <button (click)="borrarPersona(persona)">Borrar</button>
+   </li>
+  <input type="text" #nombre placeholder="Nombre">
+  <input type="date" #anio placeholder="Año Nacimiento">
+  <button (click)="adicionarPersona(nombre.value, anio.value)">Agregar Persona</button>
+</ul>-->
+
+<!-- Reto 4 -->
+<!--
+<div>
+  <div class="titulo-lista">
+    <span>Informacion de Marcas de Vehiculos</span><br>
+    <input type="text" #inputMarca placeholder="Marca">
+    <button (click)="addMarca(inputMarca.value); inputMarca.value='';">Add Marca</button>
+  </div>
+
+  <table *ngFor="let listamarca of listaMarcas">
+    <caption>
+      {{ listamarca.marca }}
+    </caption>
+    <tr>
+      <input type="text" #inputLinea placeholder="Linea">
+      <input type="text" #inputVersion placeholder="Version">
+      <button (click)="addModeloMarca(inputLinea.value, inputVersion.value, listamarca.marca); inputLinea.value=''; inputVersion.value=''">Add Linea</button>
+    </tr>
+    <tr>
+      <input type="text" #inputCiudad placeholder="Ciudad">
+      <button (click)="addCiudadMarca(inputCiudad.value, listamarca.marca); inputCiudad.value=''">Add Ciudad</button>
+    </tr>
+    <tr>
+      <th>Linea</th>
+      <th>Version</th>
+      <th>Accion</th>
+    </tr>
+    <tr *ngFor="let modelo of listamarca.modelos, let index = index">
+      <td>{{ modelo.linea }}</td>
+      <td>{{ modelo.version }}</td>
+      <td>
+        <button (click)="eliminarModeloMarca(listamarca.marca, index)">Eliminar</button>
+        <button (click)="editarModeloMarca(inputLinea.value, inputVersion.value, index, listamarca.marca); inputLinea.value=''; inputVersion.value=''">Editar</button>
+      </td>
+    </tr>
+    <tr>
+      <th colspan="2">Ciudad</th>
+      <th>Accion</th>
+    </tr>
+    <tr *ngFor="let disponibilidad of listamarca.Disponibilidad, let index = index">
+      <td colspan="2"> {{disponibilidad.ciudad}} </td>
+      <td>
+        <button (click)="eliminarCiudadMarca(listamarca.marca, index)">Eliminar</button>
+        <button (click)="editarCiudadMarca(inputCiudad.value, index, listamarca.marca); inputCiudad.value='';">Editar</button>
+      </td>
+    </tr>
+  </table>
+</div>
+-->
+
+<!-- Rutas -->
+<router-outlet></router-outlet>
